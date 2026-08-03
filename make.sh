@@ -1,2 +1,2 @@
 #!/bin/sh
-gcc main.c -o calculator.out 
+gcc-Imodulesmain.cmodules/*.c-ocalculator.out
