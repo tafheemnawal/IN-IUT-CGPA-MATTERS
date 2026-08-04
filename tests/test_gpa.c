@@ -39,12 +39,14 @@ int testRequiredGPA()
     return required > 3.89 && required < 3.91;
 }
 
+ feature008
 int testExpectedCGPA()
 {
     double expected = calculateExpectedCGPA(3.50, 90, 4.00, 30);
     return expected > 3.62 && expected < 3.63;
 }
 
+ main
 int main()
 {
     printf("GPA module tests\n");
@@ -59,8 +61,10 @@ int main()
     if (testLetterGrade()) passed++;
     total++;
     if (testRequiredGPA()) passed++;
+ feature008
     total++;
     if (testExpectedCGPA()) passed++;
+ main
 
     printf("Passed %d/%d tests\n", passed, total);
     if (passed == total) return 0;
