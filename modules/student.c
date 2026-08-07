@@ -25,6 +25,7 @@ void viewStudent(Student student)
     printf("ID: %s\n", student.id);
     printf("Name: %s\n", student.name);
     printf("CGPA: %.2f\n", student.cgpa);
+ feature010
 }
 
 void sortStudentsByCGPA(Student students[], int n_students)
@@ -41,4 +42,5 @@ void sortStudentsByCGPA(Student students[], int n_students)
             }
         }
     }
+ main
 }
