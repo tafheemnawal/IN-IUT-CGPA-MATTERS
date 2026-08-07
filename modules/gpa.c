@@ -65,3 +65,24 @@ double calculateRequiredGPA(double current_cgpa, double completed_credits,
     if (remaining_credits <= 0.0) return 0.0;
     return (target_points - current_points) / remaining_credits;
 }
+double calculateExpectedCGPA(
+    double current_cgpa,
+    double completed_credits,
+    double expected_gpa,
+    double future_credits
+)
+{
+    double current_points =
+        current_cgpa * completed_credits;
+
+    double future_points =
+        expected_gpa * future_credits;
+
+    double total_credits =
+        completed_credits + future_credits;
+
+    if (total_credits <= 0.0)
+        return 0.0;
+
+    return (current_points + future_points) / total_credits;
+}
